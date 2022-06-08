@@ -13,6 +13,7 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 
 import 'prismjs/plugins/toolbar/prism-toolbar.min.js';
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule, 
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(), NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
