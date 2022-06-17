@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit, VERSION  } from '@angul
 
 import mermaid from 'mermaid';
 
-//import { Router, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -63,9 +63,9 @@ ngOnInit(): void {
     });
     mermaid.init();
   }
-//constructor(private route: ActivatedRoute, private router: //Router){}
+constructor(private route: ActivatedRoute, private router: Router){}
 
-/*change3D(selected3D: number) {
+change3D(selected3D: number) {
     switch (selected3D) {
       case 1:
         this.router.navigate(['basicthree']);
@@ -83,7 +83,7 @@ ngOnInit(): void {
         this.router.navigate(['stories']);
         break;
     }
-  }*/
+  }
 
 
 }
