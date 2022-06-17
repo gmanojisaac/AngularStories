@@ -16,12 +16,12 @@ angular@{{ angularVersion }} | ngx-markdown@{{ ngxMarkdownVersion }}
 
 
 <div fxLayout="column" style="background-color:  #FFFFB7; height:100vh;">
-<div fxFlex="grow" style="overflow-y: auto;" fxLayoutAlign="center center">
-    <p>
+<div fxFlex="grow" fxLayoutAlign="center center">
+    
         <mat-chip-list class="mat-chip-list-stacked" aria-label="Fish selection">
             <mat-chip color="primary" selected>App Collections</mat-chip>
         </mat-chip-list>
-    </p>
+    
 </div>
 <div style="background-color: FFFFB7;  margin:10em 0em; " fxLayoutAlign="center center">
     <mat-chip-list class="mat-chip-list-stacked" aria-label="Fish selection">
@@ -29,9 +29,8 @@ angular@{{ angularVersion }} | ngx-markdown@{{ ngxMarkdownVersion }}
         <mat-chip color="accent" selected (click)="change3D(2)">BirthdayApp</mat-chip>
         <mat-chip color="accent" selected (click)="change3D(3)">ConsentApp</mat-chip>
         <mat-chip color="accent" selected (click)="change3D(4)">ImmersiveApp</mat-chip-->
-           <mat-chip color="accent" selected (click)="change3D(5)">Stories</mat-chip>
+           <mat-chip color="accent" selected >Stories</mat-chip>
     </mat-chip-list>
 </div>
 </div>
 
-<router-outlet></router-outlet>

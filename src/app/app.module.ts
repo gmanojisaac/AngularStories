@@ -16,16 +16,26 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 import 'prismjs/plugins/toolbar/prism-toolbar.min.js';
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SetupEnvComponent } from './setup-env/setup-env.component';
+import { SetupMarkdownComponent } from './setup-markdown/setup-markdown.component';
+import { SetupMermaidComponent } from './setup-mermaid/setup-mermaid.component';
+import { SetupMaterialComponent } from './setup-material/setup-material.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SetupEnvComponent,
+    SetupMarkdownComponent,
+    SetupMermaidComponent,
+    SetupMaterialComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AppSharedModule ,
-    MarkdownModule.forRoot(), BrowserAnimationsModule
+    MarkdownModule.forRoot(), 
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
