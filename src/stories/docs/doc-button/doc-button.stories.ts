@@ -16,6 +16,9 @@ Basic.ArgTypes = {
     },
   },
 };
+Basic.parameters = {
+  docs: { source: { state: 'open' } },
+};
 
 export const WithTemplate = (args) => ({
   props: args,

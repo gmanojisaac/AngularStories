@@ -20,6 +20,7 @@ import { SetupEnvComponent } from './setup-env/setup-env.component';
 import { SetupMarkdownComponent } from './setup-markdown/setup-markdown.component';
 import { SetupMermaidComponent } from './setup-mermaid/setup-mermaid.component';
 import { SetupMaterialComponent } from './setup-material/setup-material.component';
+import { MdxFullComponent } from './mdx-full/mdx-full.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { SetupMaterialComponent } from './setup-material/setup-material.componen
     SetupEnvComponent,
     SetupMarkdownComponent,
     SetupMermaidComponent,
-    SetupMaterialComponent
+    SetupMaterialComponent,
+    MdxFullComponent
   ],
   imports: [
     BrowserModule,
